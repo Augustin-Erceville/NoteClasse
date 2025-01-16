@@ -11,7 +11,7 @@ public class ExerciceArrayList {
         do{
             System.out.println("\n============ MENU ============");
             System.out.println("1. Afficher les notes");
-            System.out.println("2. AJouter une note");
+            System.out.println("2. Ajouter une note");
             System.out.println("3. Afficher une note");
             System.out.println("4. Modifier une note");
             System.out.println("5. Afficher la moyenne");
@@ -24,6 +24,13 @@ public class ExerciceArrayList {
                 case 0:
                     break;
                 case 1:
+                    nbrnote = 0;
+                    System.out.println("\n=========== NOTES ============");
+                    for(double note : notes){
+                        nbrnote++;
+                        System.out.println("Note n°" +nbrnote+ ": "+note);
+                    }
+                    System.out.println("==============================");
                     break;
                 case 2:
                     nbrnote = 0;
