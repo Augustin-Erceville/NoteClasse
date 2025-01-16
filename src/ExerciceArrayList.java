@@ -26,6 +26,17 @@ public class ExerciceArrayList {
                 case 1:
                     break;
                 case 2:
+                    nbrnote = 0;
+                    while (!reponse.toLowerCase().equals("stop")){
+                        nbrnote++;
+                        System.out.print("Note n°" +nbrnote+ ": ");
+                        if(clavier.hasNextDouble()){
+                            notes.add(clavier.nextDouble());
+                            clavier.skip("\n");
+                        }else{
+                            reponse = clavier.nextLine();
+                        }
+                    }
                     break;
                 case 3:
                     break;
