@@ -50,6 +50,13 @@ public class ExerciceArrayList {
                 case 4:
                     break;
                 case 5:
+                    int somme = 0, moy;
+                    for(int i = 0; i < notes.size(); i++)
+                        somme += notes.get(i);
+                    moy = somme / notes.size();
+                    System.out.println("\n========== MOYENNE ===========");
+                    System.out.println("Moyenne : " + moy);
+                    System.out.println("==============================");
                     break;
                 default:
                     break;
