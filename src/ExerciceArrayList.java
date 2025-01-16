@@ -22,6 +22,7 @@ public class ExerciceArrayList {
             int nbrnote;
             switch(menu) {
                 case 0:
+                    System. exit(0);
                     break;
                 case 1:
                     nbrnote = 0;
@@ -79,6 +80,7 @@ public class ExerciceArrayList {
                     System.out.println("==============================");
                     break;
                 default:
+                    menu = clavier.nextInt();
                     break;
             }
         }while(a==1);
