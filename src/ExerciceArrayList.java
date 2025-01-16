@@ -57,6 +57,17 @@ public class ExerciceArrayList {
                     System.out.println("==============================");
                     break;
                 case 4:
+                    System.out.println("\n======= MODIFIER NOTE ========");
+                    System.out.print(">>> Modifier la note n°");
+                    int modifier = clavier.nextInt();
+                    if (modifier > 0 && modifier <= notes.size()) {
+                        System.out.print("Nouvelle valeur : ");
+                        notes.set(modifier - 1, clavier.nextDouble());
+                        System.out.println("Note modifiée avec succès.");
+                    } else {
+                        System.out.println("Numéro invalide !");
+                    }
+                    System.out.println("==============================");
                     break;
                 case 5:
                     int somme = 0, moy;
