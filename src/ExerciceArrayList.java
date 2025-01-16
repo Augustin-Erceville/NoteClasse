@@ -46,6 +46,15 @@ public class ExerciceArrayList {
                     }
                     break;
                 case 3:
+                    System.out.println("\n======= AFFICHER NOTE ========");
+                    System.out.print(">>> Afficher la note n°");
+                    int afficher = clavier.nextInt();
+                    if (afficher > 0 && afficher <= notes.size()) {
+                        System.out.println("Note n°" + afficher + ": " + notes.get(afficher - 1));
+                    } else {
+                        System.out.println("Numéro invalide !");
+                    }
+                    System.out.println("==============================");
                     break;
                 case 4:
                     break;
